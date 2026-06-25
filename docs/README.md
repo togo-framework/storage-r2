@@ -1,6 +1,6 @@
 # storage-r2 — documentation
 
-  <img src=".github/assets/togo-mark.svg" alt="togo" height="64" />
+togo storage driver
 
 ## Overview
 
@@ -8,7 +8,8 @@ Package r2store is a Cloudflare R2 driver for togo storage. R2 is S3-compatible,
 so this uses the AWS S3 SDK pointed at the R2 endpoint. Implements togo.Storage
 and overrides the default filesystem storage when installed.
 
-	togo install togo-framework/storage-r2
+
+Env: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET (all required).
 
 ## Install
 
@@ -20,15 +21,14 @@ Set `STORAGE_DRIVER=r2`.
 
 ## Configuration
 
-Environment variables read by this plugin (extracted from the source):
+Environment variables read by this plugin (extracted from the source — see the gateway/provider docs for each value):
 
-| Env var | Notes |
-|---|---|
-| `G` | _see provider docs_ |
-| `R2_ACCESS_KEY_ID` | _see provider docs_ |
-| `R2_ACCOUNT_ID` | _see provider docs_ |
-| `R2_BUCKET` | _see provider docs_ |
-| `R2_SECRET_ACCESS_KEY` | _see provider docs_ |
+| Env var |
+|---|
+| `R2_ACCESS_KEY_ID"` |
+| `R2_ACCOUNT_ID"` |
+| `R2_BUCKET"` |
+| `R2_SECRET_ACCESS_KEY"` |
 
 ## Usage
 
@@ -43,4 +43,4 @@ url := st.Path("path/file.txt")
 
 - Marketplace: https://to-go.dev/marketplace
 - Source: https://github.com/togo-framework/storage-r2
-- README: ../README.md
+- Full README: ../README.md

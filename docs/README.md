@@ -25,10 +25,10 @@ Environment variables read by this plugin (extracted from the source — see the
 
 | Env var |
 |---|
-| `R2_ACCESS_KEY_ID"` |
-| `R2_ACCOUNT_ID"` |
-| `R2_BUCKET"` |
-| `R2_SECRET_ACCESS_KEY"` |
+| `R2_ACCESS_KEY_ID` |
+| `R2_ACCOUNT_ID` |
+| `R2_BUCKET` |
+| `R2_SECRET_ACCESS_KEY` |
 
 ## Usage
 
